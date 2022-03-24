@@ -1,0 +1,179 @@
+PS C:\Users\matth\Desktop\projectFolder\Capstone-Real-Estate-Marketplace-master\eth-contracts> truffle migrate --reset --network rinkeby
+Debugger attached.
+
+Compiling your contracts...
+===========================
+> Compiling .\contracts\ERC721Mintable.sol
+> Compiling .\contracts\Migrations.sol
+> Compiling .\contracts\Oraclize.sol
+> Compiling .\contracts\SolnSquareVerifier.sol
+> Compiling .\contracts\Verifier.sol
+> Compiling .\contracts\verifier.sol
+> Compiling openzeppelin-solidity/contracts/drafts/Counters.sol
+> Compiling openzeppelin-solidity/contracts/math/SafeMath.sol
+> Compiling openzeppelin-solidity/contracts/token/ERC721/IERC721Receiver.sol
+> Compiling openzeppelin-solidity/contracts/utils/Address.sol
+> Compiling openzeppelin-solidity\contracts\math\SafeMath.sol
+> Compilation warnings encountered:
+
+    /C/Users/matth/Desktop/projectFolder/Capstone-Real-Estate-Marketplace-master/eth-contracts/contracts/Oraclize.sol:320:7: Warning: Unreachable code.
+      _networkID; // silence the warning and remain backwards compatible
+      ^--------^
+,/C/Users/matth/Desktop/projectFolder/Capstone-Real-Estate-Marketplace-master/eth-contracts/contracts/Oraclize.sol:373:7: Warning: Unreachable code.
+      _myid; _result; _proof; // Silence compiler warnings
+      ^--------------------^
+,/C/Users/matth/Desktop/projectFolder/Capstone-Real-Estate-Marketplace-master/eth-contracts/contracts/Oraclize.sol:371:5: Warning: Function state mutability can be restricted to pure
+    function __callback(bytes32 _myid, string memory _result, bytes memory _proof) public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/C/Users/matth/Desktop/projectFolder/Capstone-Real-Estate-Marketplace-master/eth-contracts/contracts/SolnSquareVerifier.sol:68:5: Warning: Function state mutability can be restricted to view
+    function _existSolution(bytes32 _key) internal returns(bool){
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+> Artifacts written to C:\Users\matth\Desktop\projectFolder\Capstone-Real-Estate-Marketplace-master\eth-contracts\build\contracts
+> Compiled successfully using:
+   - solc: 0.5.16+commit.9c3226ce.Emscripten.clang
+
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 0x1c95111
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > block number:        10378793
+   > block timestamp:     1648071178
+   > account:             0x5D0DFC9DB20E8298f2F53D77D00D5257B4e9eCe9
+   > balance:             0.49789763
+   > gas used:            210237
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00210237 ETH
+
+   -------------------------------------
+   > Total cost:          0.00210237 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'SquareVerifier'
+   --------------------------
+   > block number:        10378795
+   > block timestamp:     1648071186
+   > account:             0x5D0DFC9DB20E8298f2F53D77D00D5257B4e9eCe9
+   > balance:             0.48784622
+   > gas used:            977778
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00977778 ETH
+
+
+   Deploying 'SolnSquareVerifier'
+   ------------------------------
+   > block number:        10378796
+   > block timestamp:     1648071220
+   > account:             0x5D0DFC9DB20E8298f2F53D77D00D5257B4e9eCe9
+   > balance:             0.45839173
+   > gas used:            2945449
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02945449 ETH
+
+   -------------------------------------
+   > Total cost:          0.03923227 ETH
+
+
+Summary
+=======
+> Total deployments:   3
+> Final cost:          0.04133464 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 0x1c9c347
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0xdb3b4d3f71b26a5426ac7b22520d17c7ad41e30e9a3adc59dc08b6b31c70c4f8
+   > Blocks: 0            Seconds: 4
+   > contract address:    0x8a1812aCC7474d13Bc5069F50857dEFF3c45cE8E
+   > block number:        10378797
+   > block timestamp:     1648071250
+   > account:             0x5D0DFC9DB20E8298f2F53D77D00D5257B4e9eCe9
+   > balance:             0.49773463
+   > gas used:            226537
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00226537 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00226537 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'SquareVerifier'
+   --------------------------
+   > transaction hash:    0xab06dc8781c03718a12412ba882cbe9cb20e0dd7a7bef4ba73df446b7c851c7c
+   > Blocks: 0            Seconds: 9
+   > contract address:    0x8AF141f31afA3d566dF46392D09EcecB7b3D07f6
+   > block number:        10378799
+   > block timestamp:     1648071280
+   > account:             0x5D0DFC9DB20E8298f2F53D77D00D5257B4e9eCe9
+   > balance:             0.48749922
+   > gas used:            977778
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00977778 ETH
+
+
+   Deploying 'SolnSquareVerifier'
+   ------------------------------
+   > transaction hash:    0xbefe19d1d08dc3d9085c32197e020f3d1fad4b4b5c52410eed2ec71c26adcdcf
+   > Blocks: 0            Seconds: 8
+   > contract address:    0x3E5205a4905c9081763AE477a274FB3336911442
+   > block number:        10378800
+   > block timestamp:     1648071295
+   > account:             0x5D0DFC9DB20E8298f2F53D77D00D5257B4e9eCe9
+   > balance:             0.45625673
+   > gas used:            3124249
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.03124249 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.04102027 ETH
+
+
+Summary
+=======
+> Total deployments:   3
+> Final cost:          0.04328564 ETH
+
+
+
+Waiting for the debugger to disconnect...
