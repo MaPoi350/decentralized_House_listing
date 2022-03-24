@@ -12,7 +12,7 @@ In this project we will be minting our own tokens (ERC-721) to represent titles 
     - Node v12.16.1
     - Tool Version: 1.0.0
 
-    Install requirements
+Install requirements:
 
 
 ## Contract Details
