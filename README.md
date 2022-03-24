@@ -14,6 +14,14 @@ In this project we will be minting our own tokens (ERC-721) to represent titles 
 
 Install requirements:
 
+`npm install`
+
+`truffle compile`
+
+`tuffle test`
+
+`truffle migrate --reset --network rinkeby`
+
 
 ## Contract Details
   - Contract address: 0x3E5205a4905c9081763AE477a274FB3336911442
